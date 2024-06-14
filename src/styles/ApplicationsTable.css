@@ -1,0 +1,40 @@
+/* src/components/ApplicationsTable.css
+.applications-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .applications-table th,
+  .applications-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .applications-table th {
+    background-color: #f8f9fa;
+  }
+  
+  .actions-button {
+    margin: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .accept-button {
+    background-color: #28a745;
+    color: #fff;
+  }
+  
+  .reject-button {
+    background-color: #dc3545;
+  }
+  
+  .accept-button:hover,
+  .reject-button:hover {
+    opacity: 0.9;
+  } */
+  
