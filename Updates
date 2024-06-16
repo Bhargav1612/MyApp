@@ -1,3 +1,8 @@
+<Helmet>
+        <title>Login Page</title>
+      </Helmet>
+import { Helmet } from 'react-helmet';
+
 .popup-image {
   width: 50%;
   height: auto;
