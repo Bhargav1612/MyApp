@@ -1,0 +1,109 @@
+/* Advanced Styling with White Background */
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #e9ecef, #c5d1e5); /* Subtle gradient background */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff; /* White background */
+  padding: 10px 20px; /* Reduced padding for a more compact design */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px; /* Rounded corners */
+  margin: 10px auto; /* Center aligned and margin to separate from the edges */
+  max-width: 1200px; /* Limiting the width of the navbar */
+}
+
+.navbar-logo {
+  font-family: 'Georgia', serif;
+  font-size: 1.5em; /* Slightly smaller font size */
+  font-weight: bold;
+  color: #2c3e50; /* Original dark blue color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-buttons {
+  display: flex;
+  gap: 15px; /* Reduced gap for compactness */
+}
+
+.navbar-buttons button {
+  background: rgba(255, 255, 255, 0.1); /* Transparent button background */
+  border: 2px solid #2c3e50; /* Dark blue border */
+  color: #2c3e50; /* Dark blue text */
+  font-size: 1em; /* Slightly smaller font size */
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  padding: 5px 15px; /* Reduced padding */
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out, background 0.3s ease-in-out;
+  font-family: 'Arial', sans-serif;
+  border-radius: 5px; /* Slightly rounded corners */
+}
+
+.navbar-buttons button:hover {
+  color: #fff;
+  background: #2c3e50; /* Dark blue background on hover */
+  transform: scale(1.1);
+}
+
+.navbar-buttons button::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #2c3e50;
+  transition: width 0.3s ease-in-out;
+  -webkit-transition: width 0.3s ease-in-out;
+}
+
+.navbar-buttons button:hover::after {
+  width: 100%;
+  left: 0;
+  background: #fff; /* White underline on hover */
+}
+
+.navbar-icons {
+  display: flex;
+  gap: 20px; /* Reduced gap for compactness */
+}
+
+.navbar-icon {
+  color: #2c3e50; /* Original dark blue color */
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.navbar-icon:hover {
+  transform: scale(1.2);
+  color: #34495e; /* Slightly darker blue on hover */
+}
+
+/* Advanced Styling for Responsiveness */
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .navbar-buttons {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .navbar-icons {
+    margin-top: 10px;
+  }
+}
